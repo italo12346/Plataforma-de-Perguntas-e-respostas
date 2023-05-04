@@ -1,0 +1,14 @@
+{
+  "name": "plataforma-de-perguntas-e-respostas",
+  "version": "1.0.0",
+  "description": "Uma paltaforma de perguntas e respostas usando as tecnologias: nodeJS, Express, MySQL e EJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
