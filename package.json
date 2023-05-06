@@ -4,11 +4,14 @@
   "description": "Uma paltaforma de perguntas e respostas usando as tecnologias: nodeJS, Express, MySQL e EJS",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22"
   }
 }

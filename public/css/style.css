@@ -1,0 +1,27 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    box-sizing: border-box;
+}
+label{
+    margin-bottom: 0.5rem;
+}
+.btn{
+    margin-top: 0.8rem;
+}
+
+#formulario-pergunta{
+    margin-top: 5vh;
+}
+
+.logo{
+    border-radius: 10rem;
+    width: 6vw;
+    height: 5vh;
+    margin-right: 10px;
+    margin-left: 2vw;
+}
+a:hover{
+    color: azure;
+}
