@@ -7,6 +7,9 @@
 label{
     margin-bottom: 0.5rem;
 }
+h3{
+    font-family: 'Times New Roman', Times, serif;
+}
 .btn{
     margin-top: 0.8rem;
 }
@@ -14,14 +17,13 @@ label{
 #formulario-pergunta{
     margin-top: 5vh;
 }
-
+textarea{
+    resize: none;
+}
 .logo{
     border-radius: 10rem;
     width: 6vw;
     height: 5vh;
     margin-right: 10px;
     margin-left: 2vw;
-}
-a:hover{
-    color: azure;
 }
