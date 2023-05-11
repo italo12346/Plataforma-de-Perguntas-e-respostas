@@ -1,26 +1,42 @@
-*{
+* {
     list-style: none;
     text-decoration: none;
     margin: 0;
     box-sizing: border-box;
 }
-label{
+.container{
+    position: relative;
+}
+#perguntar {
+    border-radius: 100%;
+    font-size: 100%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.card{
+    margin-top: 1vh;
+}
+
+label {
     margin-bottom: 0.5rem;
 }
-h3{
+
+h3 {
     font-family: 'Times New Roman', Times, serif;
 }
-.btn{
+
+.btn {
     margin-top: 0.8rem;
 }
 
-#formulario-pergunta{
+#formulario-pergunta {
     margin-top: 5vh;
 }
-textarea{
+
+textarea {
     resize: none;
 }
-.logo{
+
+.logo {
     border-radius: 10rem;
     width: 6vw;
     height: 5vh;
