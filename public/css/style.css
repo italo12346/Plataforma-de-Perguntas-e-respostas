@@ -44,3 +44,10 @@ textarea {
     margin-right: 10px;
     margin-left: 2vw;
 }
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 8vh;
+}
