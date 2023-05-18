@@ -9,8 +9,12 @@
       </div>
       <div class="card-footer">
         <p><%=pergunta.descricao%></p>
-        <textarea class="form-control" name="Resposta" id="" rows="8" placeholder="Insira sua Resposta"></textarea>
+        <form method="post" action="/respostas">
+        <textarea class="form-control" name="corpo" id="" rows="8" placeholder="Insira sua Resposta"></textarea>
         <button class="btn btn-primary">Responder</button>
+
+        <input type="hidden" value="<%=pergunta.id %>">
+        </form>
       </div>
     </div>
   </div>

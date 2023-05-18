@@ -3,6 +3,7 @@ const app = express();
 const bodyParser = require("body-parser")
 const connection = require("./database/database")
 const Pergunta = require("./database/Pergunta")
+const Resposta = require("./database/Resposta")
 //database
 connection
     .authenticate()
@@ -67,8 +68,19 @@ app.post('/salvarFormulario', (req, res) => {
     Pergunta.create({
         titulo: titulo,
         descricao: descricao
-    }).then(() => {
+    }).then(() => {  //Recebe o valor da promessa e continua a operação  
         res.redirect('/')
+    })
+})
+
+app.post('/respostas',(req, res)=>{
+    let corpo = req.body.corpo
+    let perguntaId = req.body.perguntaId
+    Resposta.create({
+        corpo: corpo,
+        perguntaId: perguntaId
+    }).then(()=>{
+        res.redirect('/pergunta')
     })
 })
 app.listen(3000, () => console.log("Servidor online"))
