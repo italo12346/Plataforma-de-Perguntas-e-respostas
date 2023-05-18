@@ -23,7 +23,7 @@
 ![Respostas](https://github.com/italo12346/Plataforma-de-Perguntas-e-respostas/assets/78382234/88a4c9d5-09ac-4133-832c-0d2866832d7b)
 
 <div align="center">
-<img src="https://img.shields.io/badge/STATUS-EM%20DESENVOLVIMENTO-orange">
+<img src="https://img.shields.io/badge/STATUS-PARCIALMENTE%20CONCLUIDO-orange">
 </div>
 
 <h1 align="center" id="descricao">Descrição</h1>
