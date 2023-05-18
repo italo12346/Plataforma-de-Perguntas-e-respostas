@@ -43,17 +43,18 @@ app.get("/pergunta/:id", (req, res) => {
     }).then(pergunta => {
         if (pergunta != undefined) { // Pergunta encontrada
 
-            // Resposta.findAll({
-            //     where: { perguntaId: pergunta.id },
-            //     order: [
-            //         ['id', 'DESC']
-            //     ]
-            // }).then(respostas => {
+            Resposta.findAll({
+                where: { perguntaId: pergunta.id },
+                order: [
+                    ['id', 'DESC']
+                ]
+            }).then(respostas => {
                 res.render("pergunta", {
-                    pergunta: pergunta
-                    
+                    pergunta: pergunta,
+                    respostas:respostas
+
                 });
-            // });
+            });
 
         } else { // Não encontrada
             res.redirect("/");
@@ -73,14 +74,14 @@ app.post('/salvarFormulario', (req, res) => {
     })
 })
 
-app.post('/respostas',(req, res)=>{
+app.post('/responder', (req, res) => {
     let corpo = req.body.corpo
     let perguntaId = req.body.perguntaId
-    Resposta.create({
+    Resposta.create({ // insere dados na tabela
         corpo: corpo,
         perguntaId: perguntaId
-    }).then(()=>{
-        res.redirect('/pergunta')
+    }).then(() => {
+        res.redirect('/pergunta/' + perguntaId)
     })
 })
 app.listen(3000, () => console.log("Servidor online"))

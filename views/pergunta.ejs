@@ -9,12 +9,26 @@
       </div>
       <div class="card-footer">
         <p><%=pergunta.descricao%></p>
-        <form method="post" action="/respostas">
-        <textarea class="form-control" name="corpo" id="" rows="8" placeholder="Insira sua Resposta"></textarea>
-        <button class="btn btn-primary">Responder</button>
 
-        <input type="hidden" value="<%=pergunta.id %>">
+        <form method="post" action="/responder">
+          <textarea class="form-control" name="corpo" id="" rows="8" placeholder="Insira sua Resposta"></textarea>
+          <button type="submit" class="btn btn-primary">Responder</button>
+
+          <input type="hidden" name="perguntaId" value="<%=pergunta.id %>">
         </form>
+        <hr>
+        <div class="card resposta">
+          <div class="card-title text-bg-primary">
+            <h3>Respostas</h3>
+          </div>
+          <div class="card-body">
+            <%respostas.forEach(resposta =>{ %>
+            <hr>
+            <%= resposta.id+"-"%>
+            <%= resposta.corpo%>
+            <%})%>
+          </div>
+        </div>
       </div>
     </div>
   </div>

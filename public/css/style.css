@@ -17,6 +17,9 @@
     cursor: pointer;
 }
 
+.card-title{
+    padding: 0.8vw;
+}
 label {
     margin-bottom: 0.5rem;
 }
