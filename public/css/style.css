@@ -3,7 +3,22 @@
     text-decoration: none;
     margin: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
+h1{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+label {
+    margin-bottom: 0.5rem;
+}
+
+
 .container{
     position: relative;
 }
@@ -19,13 +34,6 @@
 
 .card-title{
     padding: 0.8vw;
-}
-label {
-    margin-bottom: 0.5rem;
-}
-
-h3 {
-    font-family: 'Times New Roman', Times, serif;
 }
 
 .btn {
@@ -47,7 +55,9 @@ textarea {
     margin-right: 10px;
     margin-left: 2vw;
 }
-
+.tituloInicial{
+    color: rgb(0, 89, 255);
+}
 footer{
     position: absolute;
     bottom: 0;
