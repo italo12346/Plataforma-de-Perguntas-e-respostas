@@ -50,7 +50,8 @@
  1. Passo: Instalar o node, (No windows basta ir no site: https://nodejs.org/en e fazer a instalação). 
  Já no linux basta usar o comando: **sudo apt install npm** 
  2. Passo: instalar as dependencias do repositorio, basta usar o comando **npm install** no seu terminal.(Caso não funcione tente instalar manualmente as dependecias)
- 3. Passo: Use o comando *npm start* ou *node index.js*
+ 3. Passo: instale o MySQl
+ 4. Passo: Use o comando *npm start* ou *node index.js*
 
 
 
